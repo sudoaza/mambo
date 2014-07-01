@@ -5,6 +5,8 @@ de estres, estilo DNS Amplification DDOS. Por favor no utilizar
 esta herramienta para atacar sitios web estatales o comerciales,
 en especial a las gestoras culturales como CAPIF, SADAIC, etc.
 
+Nota: Mis habilidades con C son lamentables, **patches are welcome**.
+
 ## Instalar
 
 **Dependencias**
@@ -51,3 +53,5 @@ _Guarda los resultados en `listado.alive`_
 Errores:
 
 `Segmentation fault` Probablemente algun Servidor DNS este caido, pasale `alive.php` al listado.
+
+`socket() failed : Operation not permitted` Necesitas correrlo como root.
