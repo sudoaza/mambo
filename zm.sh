@@ -1,2 +1,2 @@
 #!/bin/bash
-zmap -i wlan0 -w wlist_ar -o nservs_ar.conf -B 64K -p 53 -P 1
+zmap -i eth0 -w wlist_ar -o nservs_ar.conf -B 140K -p 53 --probe-module=udp -P 1 -N 4000
