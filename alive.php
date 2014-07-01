@@ -14,8 +14,8 @@ echo count($lines)." lines\n\n";
 
 foreach ( $lines as $line ) {
 	$o = array();
-	exec("dig +time=1 +tries=1 ANY isc.org @$line",$o);
-	if ( count($o) > 10 ) {
+	exec("dig +time=2 +tries=1 ANY isc.org @$line",$o);
+	if ( count($o) > 8 && strlen(implode($o)) > 80 ) {
 		echo '°';
 		$output .= trim($line) . "\n";
 	} else {

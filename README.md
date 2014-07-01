@@ -22,7 +22,9 @@ _Tira unos warnings, no pasa nada_
 
 **Crear listados de Servidores DNS**
 
-El script `zm.sh` utiliza rangos de IP para escanear en busca de Servidores DNS abiertos. Editalo para cambiar el archivo de donde sacar los rangos.
+El script `zm.sh` utiliza rangos de IP para escanear en busca de 
+Servidores DNS abiertos. _Editalo para cambiar el archivo de donde 
+sacar los rangos y donde guardar los resultados._
 
     # ./zm.sh
 
@@ -39,6 +41,8 @@ Notas:
 Chequea que servidores estan respondiendo.
 
     php alive.php listado
+
+_Guarda los resultados en `listado.alive`_
 
 **Correr**
 
